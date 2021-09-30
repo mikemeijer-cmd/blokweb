@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+}
+
+body {
+    background-color: white;
+}
+
+header{
+    background-color: rgb(35,62,90);
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.8px;
+
+}
+
+.h1head{
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-nav{
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    justify-self: start;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(54, 165, 237);
+}
+
+@media only screen and (max-width: 1340px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgb(10,22,35);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+
+h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(0, 54, 113);
+    
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgb(0, 171, 228);
+    margin: 1em 0em 1em 0em;
+}
+
+
+.ramtrx{
+    margin: 3em 0em 4em 0em;
+    text-align: center;
+}
+.photo-trx{
+    margin: 1em 0em 1em 0em;
+    width: 90%;
+}
+.voorraad{
+    margin: 4em 0em 4em 0em;
+    text-align: center;
+
+}
+.voorraad-items{
+    text-decoration: none;
+    width: 100%;
+}
+
+.lijst-auto{
+    display: block;
+}
+.photo-voorraad{
+    width: 90%;
+}
+.nieuwsbrief{
+    height: 20em;
+    margin: 2em;
+    text-align: center;
+    background-image: url("../images/ram_trx.png");
+}
+
+.galerij{
+    text-align: center;
+    background-color: rgb(246,246,246);
+}
+
+.galerij-lijst{
+    display: grid;
+}
+
+.photo-galerij{
+    width: 90%;
+}
